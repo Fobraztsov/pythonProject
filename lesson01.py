@@ -9,17 +9,13 @@ while True:
         print('число должно быть > 0 и < 100')
 
 #второе задание
-import time
-import time
-sec = 63258
+sec = 64582
 sec_value = sec % (24 * 3600)
 hour_value = sec_value // 3600
 sec_value %= 3600
 min_value = sec_value // 60
 sec_value %= 60
-type_result = time.gmtime(sec)
-result = time.strftime("%H:%M:%S",type_result)
-print(result)
+print(f"{hour_value}:{min_value}:{sec_value} ")
 
 #третье задание
 number = int(input("Введите число: "))
